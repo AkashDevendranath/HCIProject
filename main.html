@@ -1,0 +1,96 @@
+<!--Akash Devendranath(Z1907154)-->
+<!--Yashwanth Yarlagadda(Z1909103)-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>HCI Project</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/21.1.6/css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/21.1.6/css/dx.light.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/hciStyle.css">
+    <script src="https://cdn3.devexpress.com/jslib/21.1.6/js/dx.all.js"></script>
+    <script src="../Scripts/data.json"></script>
+</head>
+
+<body>
+    <div class="header">
+        <span class="dashTitle">HCI PROJECT - AMTRAK DATASET</span>
+        <span class="userTitle">Welcome Learner!</span>
+    </div>
+    <div id="Dashboard" class="Dashboard">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-top:50px; display:grid; margin-left:10rem">
+            <div class="dash-box configure-box" style="min-width:100%">
+                <div class="" id="ClientUsers" style="height: 400px; overflow-y: auto;">
+                    <h2 style="text-align: left; font-size: 18px; font-weight:bold; margin-left: 7px;">AMTRAK STATIONS - SUMMARY</h2>
+                    <div style="margin-left: 7px; font-size: 16px">
+                        Amtrak is celebrating its 50th anniversary this year. Amtrak operates on a wide network
+                        covering 46 states of the United States with 500 destinations. It is the only high-speed intercity passenger rail
+                        carrier in the United States, capable of reaching speeds of up to 150 mph (241 kph). Amtrak
+                        customers make roughly 46,200 journeys every day on average. As per the data(2012) given in the table, the busiest
+                        station with highest number of passengers is <span id="newYorkPenn" class="textRef">New York (Penn Station)</span>, New York and 
+                        <span id="phily30" class="textRef">Philadelphia (30th St)</span>, 
+                        Pennsylvania respectively. Amtrak trains travel on tracks that belong to other railways for 75% of their journey. 
+                        "Host railways" include big, publicly listed firms based in the United States or Canada, as well as state and local
+                        government organizations and small businesses.
+                    </div>
+                    <br></br>
+                    <div style="margin-left: 7px; font-size: 16px">
+                        The majority of Amtrak stations are located in higher areas. The station located at the highest
+                        elevation is Frisco, Colorado with <span id="elevation" class="textRef">9070</span>ft. Amtrak continued to upgrade important station
+                        facilities on the NEC in FY 2020 for better operations and a better customer experience. In many locations                      
+                        where intercity bus and plane service are unavailable, Amtrak is the only intercity passenger
+                        transit option. Amtrak employs almost 21,000 employees from 46 different states, with a total
+                        annual payroll of more than $1.6 billion. Fort Worth, Texas is a central station and is
+                        famous for its soaring clock tower. The train route between New York, N.Y. (Penn Station)
+                        and Montreal (Gare Centrale), Quebec is the most scenic Amtrak route.
+                    </div>
+                    <br></br>
+                    <div style="margin-left: 7px; font-size: 16px">
+                        According to the data(2012) given in the table, Columbia, South Carolina is the only station
+                        that handles US Mail service. There are <span id="dlsave" class="textRef">20</span> Amtrak stations that does not observe any Day light savings. 35 Amtrak
+                        stations have MetrolinkTVM. There are <span id="lounge" class="textRef">15</span> Amtrak stations with Lounge facilities. There are 4 types of stations namely
+                        Curbside Bus Stop only (no shelter), Platform only (no shelter), Platform with Shelter, Station
+                        Building (with waiting room). Amongst all stations, 684 stations do not have any staff whereas
+                        the rest 220 stations are staffed. The stations that have staff are equipped with ticket office
+                        and the rest don’t have a ticket office. Amtrak stations have different time zones. There are <span id="cst" class="textRef">186</span> stations following Central Time Zone
+                        (CST), <span id="est" class="textRef">339</span> stations following Eastern Time Zone (EST), <span id="mst" class="textRef">63</span> stations following Mountain time, and
+                        <span id="pst" class="textRef">316</span> stations following Pacific Standard Time Zone (PST). 119 stations out of 904 stations handle
+                        Amtrak Express trains. The Texas Eagle is Amtrak's longest (and oddly presidential) route,
+                        running between Chicago, Illinois to Los Angeles, California.
+                    </div>
+                    <br></br>
+                    <div style="margin-left: 7px; font-size: 16px">
+                        Almost all Amtrak stations are equipped with an enclosed waiting area, Wi-Fi, parking area, accessible platform, 
+                        and wheelchair facilities. There is no inter-city passenger rail service to the states of South Dakota or
+                        Wyoming. <span id="kansas" class="textRef">Kansas City, Missouri</span> is a popular Amtrak station featuring its Beaux Arts glory, a
+                        planetarium and a rail history exhibit with main hall containing 3,500-pound chandeliers hanging
+                        overhead. Washington District of Columbia is known for its 22-karat gold leaf decorating the
+                        ceiling and 46 statues of Roman soldiers. It is famous for its underground shopping concourse.
+                        Because safety is a priority at Amtrak stations, the Amtrak Police keeps a close eye on all
+                        activity in the terminals and on the trains. Philadelphia (30th St), Pennsylvania is famous
+                        for its five-story wall windows and the glorious chandelier lighting. Union Terminal, Cincinnati
+                        is recently transformed into Cincinnati Museum center. People travelling nearby Richmond will
+                        witness the Main Street Station, Richmond’s six floor brick clocktower. Interior is a mimic of
+                        an original Victorian-age building. In the future Amtrak aims to be the biggest and fastest transportation network 
+                        in the US which will exceed the expectation of its customers.
+                    </div>
+                </div>
+            </div>
+            <div id="tableBox" class="dash-box configure-box" style="min-width:100%; margin-top: 1rem; margin-bottom: 2rem;">
+                <h2 style="text-align: left; font-size: 18px; font-weight:bold; margin-left: 7px;">AMTRAK STATIONS - DATA TABLE</h2>
+                <div class="" id="ClientContent" style="height: 600px;"></div>
+            </div>
+        </div>
+        <div id="cover-spin"></div>
+    </div>
+
+    <div class="footer">
+        <p>
+            Copyright © 2021 Northern Illinois University. All rights reserved.
+        </p>
+    </div>
+</body>
+
+</html>
+<script src="../Scripts/mainController.js"></script>
