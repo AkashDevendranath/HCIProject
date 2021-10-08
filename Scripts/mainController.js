@@ -3,7 +3,7 @@
 "use strict";
 $('#cover-spin').show();
 setTimeout(function(){
-    fetch("../Scripts/data.json").then(function (response) {
+    fetch("Scripts/data.json").then(function (response) {
         return response.json();
     }).
     then(function (data) {
